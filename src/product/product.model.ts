@@ -14,7 +14,7 @@ export class ProductModel {
     description: string;
     advantages: string;
     disAdvantages: string;
-    categories: string[];
+    categories: string[]; 
     tags: string;
     characteristics: {
         [key: string]: string;
@@ -22,10 +22,10 @@ export class ProductModel {
 
     @ApiProperty({example: 'Машина', description: 'Имя машины'})
     @Column({type: DataType.STRING, allowNull: false})
-    car_name: string ;
+    name: string ;
 
     @ApiProperty({example: 'Госномер', description: 'Номер машины'})
     @Column({type: DataType.STRING, allowNull: false})
-    number_car: string;
+    number: string;
 
 }
